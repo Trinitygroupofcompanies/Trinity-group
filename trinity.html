@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trinity Group of Companies</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #002244;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+        header img {
+            width: 120px;
+            margin-bottom: 15px;
+        }
+        nav {
+            background-color: #004080;
+            padding: 15px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 15px 20px;
+            font-size: 18px;
+            display: inline-block;
+        }
+        nav a:hover {
+            background-color: #003366;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #002244;
+            border-bottom: 2px solid #004080;
+            padding-bottom: 5px;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        .contact-info {
+            background: #004080;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .contact-info p {
+            margin: 5px 0;
+        }
+        .chat-box {
+            position: fixed;
+            bottom: 15px;
+            right: 15px;
+            background: #004080;
+            color: white;
+            padding: 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .chat-form {
+            display: none;
+            position: fixed;
+            bottom: 70px;
+            right: 15px;
+            background: white;
+            padding: 20px;
+            border: 1px solid #ccc;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            width: 250px;
+        }
+        .chat-form input, .chat-form textarea {
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 8px;
+            border: 1px solid #ccc;
+        }
+        .chat-form button {
+            background: #004080;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="trinity_logo.jpg" alt="Trinity Group Logo">
+    <h1>Trinity Group of Companies</h1>
+    <p>Global Leaders in Logistics, Warehousing, Import-Export, and Shipping</p>
+</header>
+
+<nav>
+    <a href="#about">About Us</a>
+    <a href="#services">Our Services</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<div class="container">
+    
+    <div id="about" class="section">
+        <h2>About Trinity Group</h2>
+        <p>Trinity Group of Companies is a diversified business enterprise specializing in *logistics, import-export, warehousing, and outsourcing solutions. With operations across **India, UAE, USA, China, Saudi Arabia, and Europe*, we ensure excellence, efficiency, and reliability in global trade.</p>
+        <p>We work with leading corporations, government organizations, and private enterprises, offering tailored solutions to streamline supply chain processes and optimize trade efficiency.</p>
+    </div>
+
+    <div id="services" class="section">
+        <h2>Our Services</h2>
+        
+        <h3>Deep Agro Products India Private Limited</h3>
+        <p>Deep Agro Products is a pioneer in *agriculture and agribusiness, offering **premium seeds, fertilizers, and advanced farming solutions*. Our company plays a crucial role in modernizing agriculture and supporting sustainable farming.</p>
+        <p><strong>Key Clients:</strong> Leading agro-industries, farm cooperatives, and agritech firms in India, UAE, and Europe.</p>
+
+        <h3>Trinity Cargo Movers</h3>
+        <p>Trinity Cargo Movers specializes in *end-to-end logistics solutions, offering **freight forwarding, supply chain management, and cargo transport* via air, land, and sea. Our smart tracking system ensures real-time shipment updates.</p>
+        <p><strong>Key Projects:</strong> Multi-million-dollar contracts for industrial goods, e-commerce giants, and pharmaceutical companies.</p>
+
+        <h3>Trinity Warehousing Solutions</h3>
+        <p>We provide *high-tech warehousing solutions, ensuring **safe storage, inventory management, and AI-driven logistics* for clients across multiple industries.</p>
+        <p><strong>Our Facilities:</strong> Located in key trade hubs: India, UAE, China, Germany, and Singapore.</p>
+
+        <h3>Trinity Shipping Company</h3>
+        <p>Trinity Shipping facilitates *maritime trade and international freight transport*, ensuring fast and cost-effective global shipping solutions.</p>
+        <p><strong>Recent Expansion:</strong> Operations extended to *50+ international ports*, reducing delivery times by 30%.</p>
+    </div>
+
+    <div id="contact" class="section">
+        <h2>Contact Us</h2>
+        <p><strong>Head Office:</strong> Ahmedabad, Gujarat, India</p>
+        <p><strong>Branches:</strong> Delhi NCR, Noida, Gurugram, Chandigarh, Bathinda, Jaipur, Barmer, Mumbai, Hyderabad</p>
+        <p><strong>Email:</strong> trinitygroupofcompanies@outlook.com | trinityahmd@gmail.com</p>
+        <p><strong>Phone:</strong> +91 9898966847</p>
+    </div>
+
+</div>
+
+<div class="contact-info">
+    <p>© 2025 Trinity Group of Companies. All Rights Reserved.</p>
+</div>
+
+<div class="chat-box" onclick="toggleChat()">Chat with Us</div>
+
+<div class="chat-form" id="chatForm">
+    <h3>Live Chat Inquiry</h3>
+    <input type="text" placeholder="Your Name">
+    <input type="email" placeholder="Your Email">
+    <input type="text" placeholder="Phone Number">
+    <input type="text" placeholder="Your Location">
+    <textarea placeholder="What services are you looking for?"></textarea>
+    <button>Submit</button>
+</div>
+
+<script>
+    function toggleChat() {
+        var chatBox = document.getElementById("chatForm");
+        if (chatBox.style.display === "none" || chatBox.style.display === "") {
+            chatBox.style.display = "block";
+        } else {
+            chatBox.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>
